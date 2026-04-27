@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --vermelho-sangue: #A31F25;
+    --preto: #0F0F0F;
+    --cor-creme: #F2EFEA;
+    --branco:#FFFFFF;
+    --cinza-claro:#C0C0C0;
+
+    --fonte-titulo: "Montserrat", sans-serif;
+    --fonte-titulo2: "Bebas Neue", sans-serif;
+    --fonte-paragrafo: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navegation-bar{
+    display: flex;
+}
+
+.navegation-list{
+    display: inline;
+}
