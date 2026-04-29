@@ -18,10 +18,48 @@
   box-sizing: border-box;
 }
 
-.navegation-bar{
-    display: flex;
+.header{
+    background-color: var(--preto);
 }
 
-.navegation-list{
-    display: inline;
+.nav{
+    padding-bottom: 20px;
 }
+
+.nav__list{
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+}
+
+.nav__link{
+    text-decoration: none;
+    color: var(--branco);
+    padding-left: 40px;
+}
+
+.hero{
+    background: url(../imgs/banner-kareteca-preto.png);
+    height: 420px;
+    background-size: cover;
+
+    color: var(--branco);
+    gap: 20px;
+}
+
+.hero__texts{
+    margin-left: 40px;
+}
+
+.hero__tagline{
+    padding: 8px;
+    margin-bottom: 16px;
+    background-color: var(--vermelho-sangue);
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.hero__tagline{
+    margin-bottom: 16px;
+}
+
