@@ -122,7 +122,7 @@
     padding: 8px;
     font-family: var(--fonte-paragrafo);
     color: var(--vermelho-sangue);
-    font-size: 1.0em;
+    font-size: 1.3em;
     font-weight: bold;
 }
 
@@ -157,6 +157,80 @@ span{
     background-color: var(--vermelho-sangue);
     color: var(--branco);
     border: 2px solid var(--branco);
+}
+
+/* ----------------- CSS TECHNIQUES------------------------ */
+
+.techniques{
+    margin-top: 30px;
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.techniques__tagline{
+    padding: 40px 0px 8px 40px;
+    margin-bottom: 16px;
+    background-color: var(--preto);
+    color: var(--vermelho-sangue);
+    display: inline-block;
+    font-family: var(--fonte-paragrafo);
+    font-size: 1.0em;
+    font-weight: bold;
+}
+
+.techniques__title{
+    font-family: var(--fonte-titulo);
+    font-size: 3.5em;
+    padding-left: 40px;
+}
+
+.techniques__description{
+    padding-left: 40px;
+    font-family: var(--fonte-paragrafo);
+    font-size: 1.3em;
+    line-height: 1.0;
+}
+
+.techniques__cards{
+    display: flex;
+    gap: 40px;
+}
+
+.techniques__name{
+    font-family: var(--fonte-paragrafo);
+    font-size: 1.4em;
+    margin: 40px 0 20px 40px;
+}
+
+.techniques__image{
+    height: 360px;
+    width: 290px;
+    border-radius: 16px;
+    border: 1px solid var(--cor-creme);
+}
+
+.techniques__text{
+    font-family: var(--fonte-paragrafo);
+    font-size: 1.4em;
+    margin: 20px 0 20px 40px
+}
+
+.techniques__button{
+    background-color: transparent;
+    color: var(--branco);
+    border-radius: 16px;
+    border: 1px solid var(--cor-creme);
+    padding: 8px;
+    margin: 20px;
+    font-family: var(--fonte-paragrafo);
+    font-size: 1.0em;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.techniques__button:hover{
+    color:var(--preto);
+    background-color: var(--cinza-claro);
 }
 
 
