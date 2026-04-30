@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+/* VARIAVEIS */
 :root{
     --vermelho-sangue: #A31F25;
     --preto: #0F0F0F;
@@ -12,12 +14,14 @@
     --fonte-paragrafo: "Roboto", sans-serif;
 }
 
+/* REST */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} 
 
+/* ----------------- CSS HEADER ------------------------ */
 .header{
     background-color: var(--preto);
 }
@@ -30,14 +34,24 @@
     display: flex;
     flex-direction: row;
     gap: 28px;
+    list-style-type:none ;
 }
 
 .nav__link{
     text-decoration: none;
     color: var(--branco);
     padding-left: 40px;
+    font-family: var(--fonte-paragrafo);
+    font-family: var(--fonte-paragrafo);
+    font-size: 1.2em; 
 }
 
+.nav__link:hover {
+    color: var(--cor-creme)
+}
+
+
+/* ----------------- CSS HERO ------------------------ */
 .hero{
     background: url(../imgs/banner-kareteca-preto.png);
     height: 420px;
@@ -57,9 +71,70 @@
     background-color: var(--vermelho-sangue);
     border-radius: 10px;
     display: inline-block;
+    font-family: var(--fonte-paragrafo);
+    font-size: 1.2em;
 }
 
-.hero__tagline{
+.hero__title{
+    font-family: var(--fonte-paragrafo);
+    font-size: 4em;
+}
+
+.hero__description{
+    font-family: var(--fonte-paragrafo);
+    font-size: 1.3em;
+    margin-bottom: 12px;
+}
+
+.hero__button{
+    padding: 12px;
     margin-bottom: 16px;
+    background-color: var(--vermelho-sangue);
+    border-radius: 12px;
+    font-family: var(--fonte-paragrafo);
+    font-size: 1.0em;
+}
+
+.hero__button:hover{
+    color: var(--cor-creme) ;
+}
+
+/* ----------------- CSS HISTORY ------------------------ */
+.history{
+    background: url(../imgs/banner__branco__gichin.png);
+    height: 540px;
+    background-size: cover;
+    color: var(--preto);
+}
+
+.history__tagline{
+    padding: 8px;
+    font-family: var(--fonte-paragrafo);
+    color: var(--vermelho-sangue);
+    font-size: 1.2em;
+}
+
+.history__title{
+    font-family: var(--fonte-paragrafo);
+    font-size: 3.5em;
+}
+
+span{
+    color: var(--vermelho-sangue);
+}
+
+.history__text{
+    font-family: var(--fonte-paragrafo);
+    margin-bottom: 20px;
+}
+
+.history__button{
+    padding: 12px;
+    margin-bottom: 16px;
+    background-color: transparent;
+    border: #A31F25;
+    border-radius: 12px;
+    font-family: var(--fonte-paragrafo);
+    font-size: 1.0em;
 }
 
