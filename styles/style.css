@@ -24,6 +24,8 @@
 /* ----------------- CSS HEADER ------------------------ */
 .header{
     background-color: var(--preto);
+    display: flex;
+    align-items: center;
 }
 
 .nav{
@@ -113,6 +115,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--preto);
+
 }
 
 .history__tagline{
