@@ -207,6 +207,11 @@ span{
     width: 290px;
     border-radius: 16px;
     border: 1px solid var(--cor-creme);
+    transition: all 0.3s ease-in-out;
+}
+
+.techniques__image:hover{
+    border: 2px solid var(--vermelho-sangue);
 }
 
 .techniques__text{
