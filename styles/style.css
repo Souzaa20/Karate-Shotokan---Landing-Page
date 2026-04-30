@@ -14,7 +14,7 @@
     --fonte-paragrafo: "Roboto", sans-serif;
 }
 
-/* REST */
+/* --------------------- REST ------------------ */
 * {
   margin: 0;
   padding: 0;
@@ -47,7 +47,7 @@
 }
 
 .nav__link:hover {
-    color: var(--cor-creme)
+    color: var(--vermelho-sangue)
 }
 
 
@@ -56,6 +56,7 @@
     background: url(../imgs/banner-kareteca-preto.png);
     height: 420px;
     background-size: cover;
+    background-repeat: no-repeat;
 
     color: var(--branco);
     gap: 20px;
@@ -72,7 +73,9 @@
     border-radius: 10px;
     display: inline-block;
     font-family: var(--fonte-paragrafo);
-    font-size: 1.2em;
+    font-size: 1.0em;
+    font-weight: bold;
+
 }
 
 .hero__title{
@@ -93,6 +96,10 @@
     border-radius: 12px;
     font-family: var(--fonte-paragrafo);
     font-size: 1.0em;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid var(--vermelho-sangue);
+
 }
 
 .hero__button:hover{
@@ -102,8 +109,9 @@
 /* ----------------- CSS HISTORY ------------------------ */
 .history{
     background: url(../imgs/banner__branco__gichin.png);
-    height: 540px;
+    height: 640px;
     background-size: cover;
+    background-repeat: no-repeat;
     color: var(--preto);
 }
 
@@ -111,7 +119,8 @@
     padding: 8px;
     font-family: var(--fonte-paragrafo);
     color: var(--vermelho-sangue);
-    font-size: 1.2em;
+    font-size: 1.0em;
+    font-weight: bold;
 }
 
 .history__title{
@@ -125,16 +134,26 @@ span{
 
 .history__text{
     font-family: var(--fonte-paragrafo);
-    margin-bottom: 20px;
+    line-height: 1.0;
+    white-space: pre-wrap;
 }
 
 .history__button{
-    padding: 12px;
-    margin-bottom: 16px;
+    padding: 14px;
     background-color: transparent;
-    border: #A31F25;
+    border: 2px solid #A31F25;
+    color: var(--vermelho-sangue);
     border-radius: 12px;
     font-family: var(--fonte-paragrafo);
     font-size: 1.0em;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
 }
+
+.history__button:hover{
+    background-color: var(--vermelho-sangue);
+    color: var(--branco);
+    border: 2px solid var(--branco);
+}
+
 
