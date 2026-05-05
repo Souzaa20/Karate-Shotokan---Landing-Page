@@ -21,6 +21,10 @@
   box-sizing: border-box;
 } 
 
+body {
+    font-family: var(--fonte-paragrafo);
+}
+
 /* ----------------- CSS HEADER ------------------------ */
 .header{
     background-color: var(--preto);
@@ -43,8 +47,6 @@
     text-decoration: none;
     color: var(--branco);
     padding-left: 40px;
-    font-family: var(--fonte-paragrafo);
-    font-family: var(--fonte-paragrafo);
     font-size: 1.2em; 
 }
 
@@ -74,19 +76,16 @@
     background-color: var(--vermelho-sangue);
     border-radius: 10px;
     display: inline-block;
-    font-family: var(--fonte-paragrafo);
     font-size: 1.0em;
     font-weight: bold;
 
 }
 
 .hero__title{
-    font-family: var(--fonte-paragrafo);
     font-size: 4em;
 }
 
 .hero__description{
-    font-family: var(--fonte-paragrafo);
     font-size: 1.3em;
     margin-bottom: 12px;
 }
@@ -96,7 +95,6 @@
     margin-bottom: 16px;
     background-color: var(--vermelho-sangue);
     border-radius: 12px;
-    font-family: var(--fonte-paragrafo);
     font-size: 1.0em;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
@@ -120,14 +118,12 @@
 
 .history__tagline{
     padding: 8px;
-    font-family: var(--fonte-paragrafo);
     color: var(--vermelho-sangue);
     font-size: 1.3em;
     font-weight: bold;
 }
 
 .history__title{
-    font-family: var(--fonte-paragrafo);
     font-size: 3.5em;
 }
 
@@ -136,7 +132,6 @@ span{
 }
 
 .history__text{
-    font-family: var(--fonte-paragrafo);
     line-height: 1.0;
     white-space: pre-wrap;
 }
@@ -144,10 +139,9 @@ span{
 .history__button{
     padding: 14px;
     background-color: transparent;
-    border: 2px solid #A31F25;
+    border: 2px solid var(--vermelho-sangue);
     color: var(--vermelho-sangue);
     border-radius: 12px;
-    font-family: var(--fonte-paragrafo);
     font-size: 1.0em;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
@@ -162,7 +156,6 @@ span{
 /* ----------------- CSS TECHNIQUES------------------------ */
 
 .techniques{
-    margin-top: 30px;
     background-color: var(--preto);
     color: var(--branco);
 }
@@ -173,7 +166,6 @@ span{
     background-color: var(--preto);
     color: var(--vermelho-sangue);
     display: inline-block;
-    font-family: var(--fonte-paragrafo);
     font-size: 1.0em;
     font-weight: bold;
 }
@@ -186,7 +178,6 @@ span{
 
 .techniques__description{
     padding-left: 40px;
-    font-family: var(--fonte-paragrafo);
     font-size: 1.3em;
     line-height: 1.0;
 }
@@ -197,7 +188,6 @@ span{
 }
 
 .techniques__name{
-    font-family: var(--fonte-paragrafo);
     font-size: 1.4em;
     margin: 40px 0 20px 40px;
 }
@@ -215,7 +205,6 @@ span{
 }
 
 .techniques__text{
-    font-family: var(--fonte-paragrafo);
     font-size: 1.4em;
     margin: 20px 0 20px 40px
 }
@@ -227,7 +216,6 @@ span{
     border: 1px solid var(--cor-creme);
     padding: 8px;
     margin: 20px;
-    font-family: var(--fonte-paragrafo);
     font-size: 1.0em;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
@@ -238,4 +226,117 @@ span{
     background-color: var(--cinza-claro);
 }
 
+/* ----------------- CSS KATAS ------------------------ */
+
+.katas__athletes{
+    display: flex;
+}
+
+.katas{
+    background: url(../imgs/banner__karateca__lua__vermelha.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+    width: 600px;
+}
+
+.katas__tagline{
+    padding: 8px;
+    color: var(--vermelho-sangue);
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.katas__title{
+    font-size: 3.5em;
+}
+
+.katas__description{
+    line-height: 1.0;
+}
+
+.katas__list{
+    display: block;
+}
+
+.katas__item{
+    background-color: var(--cinza-claro);
+    padding: 10px;
+    margin: 20px;
+    display: block;
+    border: 1px solid var(--preto);
+}
+
+.katas__button{
+    padding: 14px;
+    background-color: transparent;
+    border: 2px solid var(--vermelho-sangue);
+    color: var(--vermelho-sangue);
+    border-radius: 12px;
+    font-size: 1.0em;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.katas__button:hover{
+    background-color: var(--vermelho-sangue);
+    color: var(--branco);
+    border: 2px solid var(--branco)
+}
+
+/* ----------------- CSS ATHLETES ------------------------ */
+.athletes{
+    background: url(../imgs/banner__arvore.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+}
+
+.athletes__tagline{
+    padding: 8px;
+    color: var(--vermelho-sangue);
+    font-size: 1.3em;
+    font-weight: bold
+}
+
+.athletes__title{
+    font-size: 3.5em;
+}
+
+.athletes__description{
+    line-height: 1.0;
+}
+
+.athletes__cards{
+    display: flex;
+    gap: 20px;
+}
+
+.athletes__card{
+    flex-direction: row;
+}
+
+.athletes__image{
+    width: 400px;
+    height: 310px;
+}
+
+.athletes__name{
+    line-height: 1.0;
+    font-weight: bold;
+}
+
+.athletes__text{
+    line-height: 1.0;
+}
+
+.athletes__button{
+    padding: 14px;
+    background-color: transparent;
+    border: 2px solid var(--vermelho-sangue);
+    color: var(--vermelho-sangue);
+    border-radius: 12px;
+    font-size: 1.0em;
+    font-weight: bold;
+}
 
