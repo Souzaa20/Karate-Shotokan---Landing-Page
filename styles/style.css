@@ -54,6 +54,10 @@ body {
     color: var(--vermelho-sangue)
 }
 
+.content{
+    
+}
+
 
 /* ----------------- CSS HERO ------------------------ */
 .hero{
@@ -64,10 +68,6 @@ body {
 
     color: var(--branco);
     gap: 20px;
-}
-
-.hero__texts{
-    margin-left: 40px;
 }
 
 .hero__tagline{
@@ -173,11 +173,9 @@ span{
 .techniques__title{
     font-family: var(--fonte-titulo);
     font-size: 3.5em;
-    padding-left: 40px;
 }
 
 .techniques__description{
-    padding-left: 40px;
     font-size: 1.3em;
     line-height: 1.0;
 }
