@@ -14,26 +14,44 @@
     --fonte-paragrafo: "Roboto", sans-serif;
 }
 
-/* --------------------- REST ------------------ */
+/* --------------------- RESET ------------------ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 } 
 
+/* --------------------- BODY ------------------ */
+
 body {
     font-family: var(--fonte-paragrafo);
+    height: 100%;
+}
+
+.btn-outline{
+    background-color: transparent;
+    border: 1px solid var(--vermelho-sangue);
+    padding: 12px;
+    color: var(--vermelho-sangue);
+    border-radius: 14px;
+    font-size: 1.0em;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer
+}
+
+.btn-outline:hover{
+    background-color: var(--vermelho-sangue);
+    color: var(--branco);
+    border: 2px solid var(--branco);
 }
 
 /* ----------------- CSS HEADER ------------------------ */
 .header{
     background-color: var(--preto);
     display: flex;
+    justify-content: space-around;
     align-items: center;
-}
-
-.nav{
-    padding-bottom: 20px;
 }
 
 .nav__list{
@@ -54,31 +72,30 @@ body {
     color: var(--vermelho-sangue)
 }
 
-.content{
-    
-}
 
+/*--------------------- CSS  CONTAINER -----------------*/
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px
+}
 
 /* ----------------- CSS HERO ------------------------ */
 .hero{
     background: url(../imgs/banner-kareteca-preto.png);
-    height: 420px;
     background-size: cover;
     background-repeat: no-repeat;
-
     color: var(--branco);
-    gap: 20px;
 }
 
 .hero__tagline{
     padding: 8px;
     margin-bottom: 16px;
     background-color: var(--vermelho-sangue);
-    border-radius: 10px;
+    border-radius: 14px;
     display: inline-block;
-    font-size: 1.0em;
+    font-size: 1.2em;
     font-weight: bold;
-
 }
 
 .hero__title{
@@ -92,14 +109,13 @@ body {
 
 .hero__button{
     padding: 12px;
-    margin-bottom: 16px;
     background-color: var(--vermelho-sangue);
-    border-radius: 12px;
+    border-radius: 14px;
     font-size: 1.0em;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
     border: 2px solid var(--vermelho-sangue);
-
+    cursor: pointer
 }
 
 .hero__button:hover{
@@ -109,17 +125,15 @@ body {
 /* ----------------- CSS HISTORY ------------------------ */
 .history{
     background: url(../imgs/banner__branco__gichin.png);
-    height: 640px;
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--preto);
-
 }
 
 .history__tagline{
-    padding: 8px;
+    padding: 60px 0 10px 0;
     color: var(--vermelho-sangue);
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
@@ -127,30 +141,13 @@ body {
     font-size: 3.5em;
 }
 
-span{
+.history__title__span{
     color: var(--vermelho-sangue);
 }
 
 .history__text{
-    line-height: 1.0;
-    white-space: pre-wrap;
-}
-
-.history__button{
-    padding: 14px;
-    background-color: transparent;
-    border: 2px solid var(--vermelho-sangue);
-    color: var(--vermelho-sangue);
-    border-radius: 12px;
-    font-size: 1.0em;
-    font-weight: bold;
-    transition: all 0.3s ease-in-out;
-}
-
-.history__button:hover{
-    background-color: var(--vermelho-sangue);
-    color: var(--branco);
-    border: 2px solid var(--branco);
+    font-size: 1.2em;
+    margin-bottom: 16px;
 }
 
 /* ----------------- CSS TECHNIQUES------------------------ */
@@ -161,39 +158,38 @@ span{
 }
 
 .techniques__tagline{
-    padding: 40px 0px 8px 40px;
     margin-bottom: 16px;
     background-color: var(--preto);
     color: var(--vermelho-sangue);
     display: inline-block;
-    font-size: 1.0em;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
 .techniques__title{
     font-family: var(--fonte-titulo);
+    margin: 10px;
     font-size: 3.5em;
 }
 
 .techniques__description{
     font-size: 1.3em;
-    line-height: 1.0;
 }
 
 .techniques__cards{
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
 }
 
 .techniques__name{
+    margin: 10px;
     font-size: 1.4em;
-    margin: 40px 0 20px 40px;
 }
 
 .techniques__image{
-    height: 360px;
     width: 290px;
-    border-radius: 16px;
+    border-radius: 14px;
     border: 1px solid var(--cor-creme);
     transition: all 0.3s ease-in-out;
 }
@@ -210,13 +206,14 @@ span{
 .techniques__button{
     background-color: transparent;
     color: var(--branco);
-    border-radius: 16px;
+    border-radius: 14px;
     border: 1px solid var(--cor-creme);
     padding: 8px;
     margin: 20px;
     font-size: 1.0em;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
+    cursor: pointer
 }
 
 .techniques__button:hover{
@@ -234,14 +231,13 @@ span{
     background: url(../imgs/banner__karateca__lua__vermelha.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 450px;
     width: 600px;
 }
 
 .katas__tagline{
     padding: 8px;
     color: var(--vermelho-sangue);
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
@@ -250,7 +246,7 @@ span{
 }
 
 .katas__description{
-    line-height: 1.0;
+    font-size: 1.3em;
 }
 
 .katas__list{
@@ -263,23 +259,7 @@ span{
     margin: 20px;
     display: block;
     border: 1px solid var(--preto);
-}
-
-.katas__button{
-    padding: 14px;
-    background-color: transparent;
-    border: 2px solid var(--vermelho-sangue);
-    color: var(--vermelho-sangue);
-    border-radius: 12px;
-    font-size: 1.0em;
-    font-weight: bold;
-    transition: all 0.3s ease-in-out;
-}
-
-.katas__button:hover{
-    background-color: var(--vermelho-sangue);
-    color: var(--branco);
-    border: 2px solid var(--branco)
+    border-radius: 14px;
 }
 
 /* ----------------- CSS ATHLETES ------------------------ */
@@ -287,13 +267,12 @@ span{
     background: url(../imgs/banner__arvore.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 450px;
 }
 
 .athletes__tagline{
     padding: 8px;
     color: var(--vermelho-sangue);
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: bold
 }
 
@@ -302,39 +281,60 @@ span{
 }
 
 .athletes__description{
-    line-height: 1.0;
+    font-size: 1.3em;
 }
 
 .athletes__cards{
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .athletes__card{
-    flex-direction: row;
+    display:flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .athletes__image{
-    width: 400px;
-    height: 310px;
+    border-radius: 14px;
+    flex-direction: column;
 }
 
 .athletes__name{
-    line-height: 1.0;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
 .athletes__text{
-    line-height: 1.0;
+   font-size: 1.0em;
 }
 
-.athletes__button{
-    padding: 14px;
-    background-color: transparent;
-    border: 2px solid var(--vermelho-sangue);
+/* ----------------- CSS FOOTER ------------------------ */
+
+.footer{
+    background-color: var(--preto);
+    color: var(--cor-creme);
+    padding: 10px;
+    text-align: center;
+}
+
+.footer__text{
+   font-size: 1.0em;
+}
+
+.footer__link{
+    text-decoration: none;
     color: var(--vermelho-sangue);
-    border-radius: 12px;
-    font-size: 1.0em;
-    font-weight: bold;
 }
 
+/*------------------ CSS MEDIA QUERY ------------------*/
+
+@media (max-width:768px){
+
+}
+
+
+@media (max-width:480px){
+    
+}
