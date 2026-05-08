@@ -22,7 +22,6 @@
 } 
 
 /* --------------------- BODY ------------------ */
-
 body {
     font-family: var(--fonte-paragrafo);
     height: 100%;
@@ -71,7 +70,6 @@ body {
 .nav__link:hover {
     color: var(--vermelho-sangue)
 }
-
 
 /*--------------------- CSS  CONTAINER -----------------*/
 .container{
@@ -148,6 +146,7 @@ body {
 .history__text{
     font-size: 1.2em;
     margin-bottom: 16px;
+    max-width: 900px;
 }
 
 /* ----------------- CSS TECHNIQUES------------------------ */
@@ -168,12 +167,16 @@ body {
 
 .techniques__title{
     font-family: var(--fonte-titulo);
-    margin: 10px;
     font-size: 3.5em;
 }
 
 .techniques__description{
     font-size: 1.3em;
+}
+
+.techniques__card{
+    flex:1;
+    min-width: 200px;
 }
 
 .techniques__cards{
@@ -188,10 +191,12 @@ body {
 }
 
 .techniques__image{
-    width: 290px;
+    max-width: 290px;
     border-radius: 14px;
     border: 1px solid var(--cor-creme);
     transition: all 0.3s ease-in-out;
+    min-width: 100px;
+    flex: 1;
 }
 
 .techniques__image:hover{
@@ -225,13 +230,15 @@ body {
 
 .katas__athletes{
     display: flex;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .katas{
     background: url(../imgs/banner__karateca__lua__vermelha.png);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 600px;
+    flex: 1;
 }
 
 .katas__tagline{
@@ -250,14 +257,14 @@ body {
 }
 
 .katas__list{
-    display: block;
+    display: inline-block;
 }
 
 .katas__item{
     background-color: var(--cinza-claro);
     padding: 10px;
     margin: 20px;
-    display: block;
+    list-style-type: none;
     border: 1px solid var(--preto);
     border-radius: 14px;
 }
@@ -299,6 +306,7 @@ body {
 .athletes__image{
     border-radius: 14px;
     flex-direction: column;
+    max-width: 400px;
 }
 
 .athletes__name{
