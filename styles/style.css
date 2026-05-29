@@ -84,6 +84,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--branco);
+    padding: 100px 0px;
 }
 
 .hero__tagline{
@@ -126,6 +127,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--preto);
+    padding-bottom: 40px;
 }
 
 .history__tagline{
@@ -157,6 +159,7 @@ body {
 }
 
 .techniques__tagline{
+    padding-top: 80px;
     margin-bottom: 16px;
     background-color: var(--preto);
     color: var(--vermelho-sangue);
@@ -168,6 +171,7 @@ body {
 .techniques__title{
     font-family: var(--fonte-titulo);
     font-size: 3.5em;
+    padding-bottom: 16px;
 }
 
 .techniques__description{
@@ -186,7 +190,8 @@ body {
 }
 
 .techniques__name{
-    margin: 10px;
+    margin: 20px 0 0 0;
+    text-align: center;
     font-size: 1.4em;
 }
 
@@ -205,7 +210,8 @@ body {
 
 .techniques__text{
     font-size: 1.4em;
-    margin: 20px 0 20px 40px
+    margin: 20px 0 20px 40px;
+    text-align: center;
 }
 
 .techniques__button{
@@ -214,7 +220,7 @@ body {
     border-radius: 14px;
     border: 1px solid var(--cor-creme);
     padding: 8px;
-    margin: 20px;
+    margin: 20px 0 40px 0;
     font-size: 1.0em;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
@@ -239,6 +245,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     flex: 1;
+    padding: 40px;
 }
 
 .katas__tagline{
@@ -274,6 +281,7 @@ body {
     background: url(../imgs/banner__arvore.png);
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 40px;
 }
 
 .athletes__tagline{
@@ -301,12 +309,15 @@ body {
     display:flex;
     flex-direction: column;
     gap: 8px;
+    max-width: 350px
 }
 
 .athletes__image{
     border-radius: 14px;
-    flex-direction: column;
-    max-width: 400px;
+    width: 100%;
+    max-width: 350px;
+    height: 250px;
+    object-fit: cover;  /*faz a img ou vídeo preencher todo contêiner sem distorcer, mantendo a proporção original e cortando o excesso das bordas.*/
 }
 
 .athletes__name{
