@@ -80,7 +80,7 @@ body {
 
 /* ----------------- CSS HERO ------------------------ */
 .hero{
-    background: url(../imgs/banner-kareteca-preto.png);
+    background: url(../imgs/hero/banner-kareteca-preto.png);
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--branco);
@@ -123,7 +123,7 @@ body {
 
 /* ----------------- CSS HISTORY ------------------------ */
 .history{
-    background: url(../imgs/banner__branco__gichin.png);
+    background: url(../imgs/history/banner__branco__gichin.png);
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--preto);
@@ -241,7 +241,7 @@ body {
 }
 
 .katas{
-    background: url(../imgs/banner__karateca__lua__vermelha.png);
+    background: url(../imgs/kata/banner__karateca__lua__vermelha.png);
     background-size: cover;
     background-repeat: no-repeat;
     flex: 1;
@@ -278,7 +278,7 @@ body {
 
 /* ----------------- CSS ATHLETES ------------------------ */
 .athletes{
-    background: url(../imgs/banner__arvore.png);
+    background: url(../imgs/athletes/banner__arvore.png);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 40px;
