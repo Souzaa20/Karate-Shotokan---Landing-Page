@@ -82,7 +82,9 @@ body {
 .hero{
     background: url(../imgs/hero/banner-kareteca-preto.png);
     background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
+    min-height: 100vh;
     color: var(--branco);
     padding: 100px 0px;
 }
@@ -126,6 +128,8 @@ body {
     background: url(../imgs/history/banner__branco__gichin.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 600px;
     color: var(--preto);
     padding-bottom: 40px;
 }
@@ -135,6 +139,12 @@ body {
     color: var(--vermelho-sangue);
     font-size: 1.2em;
     font-weight: bold;
+}
+
+.history .container {
+    max-width: 520px;
+    margin: 0;
+    padding-left: 40px;
 }
 
 .history__title{
@@ -279,7 +289,8 @@ body {
 /* ----------------- CSS ATHLETES ------------------------ */
 .athletes{
     background: url(../imgs/athletes/banner__arvore.png);
-    background-size: cover;
+    background-position: bottom right;
+    background-size: contain;
     background-repeat: no-repeat;
     padding: 40px;
 }
@@ -315,8 +326,8 @@ body {
 .athletes__image{
     border-radius: 14px;
     width: 100%;
-    max-width: 350px;
-    height: 250px;
+    max-width: 280px;
+    height: 200px;
     object-fit: cover;  /*faz a img ou vídeo preencher todo contêiner sem distorcer, mantendo a proporção original e cortando o excesso das bordas.*/
 }
 
