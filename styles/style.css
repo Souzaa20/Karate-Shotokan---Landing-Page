@@ -89,6 +89,10 @@ body {
     padding: 100px 0px;
 }
 
+.container{
+    margin-left: 250px;
+}
+
 .hero__tagline{
     padding: 8px;
     margin-bottom: 16px;
@@ -106,6 +110,7 @@ body {
 .hero__description{
     font-size: 1.3em;
     margin-bottom: 12px;
+    margin-top: 12px;
 }
 
 .hero__button{
@@ -114,6 +119,7 @@ body {
     border-radius: 14px;
     font-size: 1.0em;
     font-weight: bold;
+    margin-top: 12px;
     transition: all 0.3s ease-in-out;
     border: 2px solid var(--vermelho-sangue);
     cursor: pointer
