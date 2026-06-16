@@ -143,12 +143,16 @@ body {
 
 .history .container {
     max-width: 520px;
-    margin: 0;
+    margin: 0 auto 0 40px;
     padding-left: 40px;
 }
 
 .history__title{
     font-size: 3.5em;
+}
+
+.history__text--hidden{
+    display: none;
 }
 
 .history__title__span{
