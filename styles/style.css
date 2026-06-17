@@ -300,7 +300,7 @@ body {
 .athletes{
     background: url(../imgs/athletes/banner__arvore.png);
     background-position: bottom right;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     padding: 40px;
 }
