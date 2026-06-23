@@ -10,8 +10,8 @@
     --cinza-claro:#C0C0C0;
 
     --fonte-titulo: "Montserrat", sans-serif;
-    --fonte-titulo2: "Bebas Neue", sans-serif;
     --fonte-paragrafo: "Roboto", sans-serif;
+    --fonte-titulo2: "Bebas Neue", sans-serif;
 }
 
 /* --------------------- RESET ------------------ */
@@ -75,7 +75,7 @@ body {
 .container{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px
+    padding: 0 20px;
 }
 
 /* ----------------- CSS HERO ------------------------ */
@@ -87,10 +87,6 @@ body {
     min-height: 100vh;
     color: var(--branco);
     padding: 100px 0px;
-}
-
-.container{
-    margin-left: 250px;
 }
 
 .hero__tagline{
@@ -157,7 +153,7 @@ body {
     font-size: 3.5em;
 }
 
-.history__text--hidden{
+.history__text__hidden{
     display: none;
 }
 
@@ -355,17 +351,115 @@ body {
 .footer{
     background-color: var(--preto);
     color: var(--cor-creme);
-    padding: 10px;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 20px;
+    justify-content: space-between;
 }
 
-.footer__text{
-   font-size: 1.0em;
+.footer__brand{
+    display: flex;
+    align-items: center;
+}
+
+.footer__logo{
+    height: 160px;
+    width: 160px;
+    margin: 50px;
+}
+
+.footer__title{
+    font-size: 1.8em;
+    margin-top: 20px;
+}
+
+.footer__description{
+    font-size: 1.3em;
+    text-align: left;
+    margin: 90px;
+}
+
+.footer__text__kanjis{
+   font-size: 2.2em;
+   margin: 60px;
+}
+
+.footer__block1{
+    display: flex;
+    flex-direction: column;
+    flex: 1
+}
+
+.footer__subtitle{
+    font-size: 1.6em;
+    font-weight: bold;
+    padding-top: 16px;
+}
+
+.footer__list{
+    text-align: left;
+}
+
+.footer__nav{
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.footer__nav:hover{
+    color: var(--vermelho-sangue);
+}
+
+.footer__item{
+    font-size: 1.2em;
+    text-decoration: none;
+    list-style-type:none ;
+    padding: 6px;
+}
+
+.footer__block2{
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+    min-width: 290px;
+}
+
+.footer__list2{
+    text-align: left;
+}
+
+.footer__link__contato{
+    text-decoration: none;
+    list-style-type:none ;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    white-space: nowrap
+}
+
+.footer__link__contato:hover{
+    color: var(--vermelho-sangue);
+}
+
+.footer__link__contato > a{
+    color: var(--branco);
+    text-decoration: none;
 }
 
 .footer__link{
     text-decoration: none;
     color: var(--vermelho-sangue);
+}
+
+.icon__social__media{
+    padding: 20px;
+}
+
+.footer__authores_directs{
+    flex-wrap: wrap;
+    width: 100%
 }
 
 /*------------------ CSS MEDIA QUERY ------------------*/
