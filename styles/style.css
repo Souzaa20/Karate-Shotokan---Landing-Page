@@ -53,6 +53,10 @@ body {
     align-items: center;
 }
 
+.header__hamburger{
+    display: none;
+}
+
 .nav__list{
     display: flex;
     flex-direction: row;
@@ -462,13 +466,30 @@ body {
     width: 100%
 }
 
-/*------------------ CSS MEDIA QUERY ------------------*/
+/*------------------ CSS MEDIA QUERY TABLET  ------------------*/
 
 @media (max-width:768px){
+.header{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav{
+  display: none;   
+}
+
+.header__hamburger{
+    display: block;
+    color: var(--branco);
+}
+
+.img__menu__hamburguer{
+     width: 28px;
+}
 
 }
 
 
-@media (max-width:480px){
+@media (max-width:480px){ 
     
 }
