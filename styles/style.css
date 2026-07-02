@@ -468,6 +468,7 @@ body {
 
 /*------------------ CSS MEDIA QUERY TABLET  ------------------*/
 
+/*------------------     HEADER TABLET    ------------------*/
 @media (max-width:768px){
 .header{
     flex-direction: row;
@@ -485,6 +486,32 @@ body {
 
 .img__menu__hamburguer{
      width: 28px;
+}
+
+/*------------------     HERO TABLET    ------------------*/
+.hero{
+    padding-top: 120px;
+}
+
+.hero__tagline{
+    padding: 12px;
+    font-size: 1.0em;
+}
+
+.hero__title{
+    font-size: 3em;
+}
+
+.hero__description{
+    font-size: 1.0em;
+}
+
+.escondido{
+    display: none;
+}
+
+.hero__button{
+    font-size: 1.0em;
 }
 
 }
