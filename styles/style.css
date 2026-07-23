@@ -458,7 +458,7 @@ body {
 }
 
 .icon__social__media{
-    padding: 20px;
+    width: 22px;
 }
 
 .footer__authores_directs{
@@ -512,6 +512,146 @@ body {
 
 .hero__button{
     font-size: 1.0em;
+}
+
+/* -----------------  HISTORY TABLET ------------------- */
+.history__title{
+    font-size: 2.5em;
+}
+
+.history .container {
+    max-width: 40%;
+    margin: 0 0 0 20px;
+    padding-left: 20px;
+}
+
+.history__text {
+    max-width: 100%;
+    font-size: 1em;
+}
+
+/* ----------------- TECHNIQUES TABLET ------------------- */
+.techniques__title{
+    font-size: 2.5em;
+}
+
+.techniques__description{
+    margin-bottom: 26px;
+}
+
+.techniques__cards {
+    gap: 16px;
+}
+
+.techniques__card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: calc(50% - 8px);
+    flex: none;
+    gap: 12px;
+    border: 1px solid var(--cor-creme);
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.techniques__card:hover{
+    border: 2px solid var(--vermelho-sangue);
+}
+
+.techniques__image{
+    width: 120px;
+    min-width: 120px;
+    max-width: 120px;
+    height: 120px;
+    object-fit: cover;
+    order: -1;
+    border: none;
+}
+
+.techniques__image:hover{
+    border: none;
+}
+
+
+/* -----------------  KATAS TABLET ------------------- */
+.katas{
+    flex-basis: 450px;
+    min-height: 550px;
+    background-size: cover;
+    background-position: center bottom;
+    padding-bottom: 200px;
+}
+
+.katas__tagline{
+    padding: 2px;
+    font-size: 1em;
+}
+
+.katas__title{
+    font-size: 2.5em;
+}
+
+.katas__description{
+    font-size: 1.2em;
+}
+
+.katas__item{
+    font-size: 1em;
+}
+
+/* ---------------- ATHLETES TABLET ------------------- */
+.athletes__tagline{
+    font-size: 1em;
+}
+
+.athletes__title{
+    font-size: 2.5em;
+}
+
+.athletes__description{
+    font-size: 1.2em;
+    padding: 8px;
+}
+
+.athletes__cards{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.athletes__card{
+    display: flex;
+    flex-direction: column;
+}
+
+.athletes__image{
+    width: 190px;
+    min-width: 100px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+/* ----------------- FOOTER TABLET ------------------- */
+.footer__brand{
+    margin:  0 auto;
+}
+
+.footer__logo{
+    height: 100px;
+    width: 100px;
+    margin: 30px;
+}
+
+.footer__description{
+    font-size: 1.2em;
+    margin: 40px;
+}
+
+.footer__text__kanjis{
+   font-size: 2.0em;
+   margin: 40px;
 }
 
 }
