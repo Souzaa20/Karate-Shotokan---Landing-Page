@@ -103,8 +103,9 @@ body {
     font-weight: bold;
 }
 
-.hero__title{
-    font-size: 4em;
+.hero__title span{
+    display:block;
+    font-size: 3em;
 }
 
 .hero__description{
@@ -289,8 +290,9 @@ body {
 
 .katas__item{
     background-color: var(--cinza-claro);
-    padding: 10px;
-    margin: 20px;
+    text-align: center;
+    padding: 14px;
+    margin: 10px;
     list-style-type: none;
     border: 1px solid var(--preto);
     border-radius: 14px;
@@ -390,6 +392,10 @@ body {
    margin: 60px;
 }
 
+.footer__blocks{
+    display: contents;
+}
+
 .footer__block1{
     display: flex;
     flex-direction: column;
@@ -404,6 +410,11 @@ body {
 
 .footer__list{
     text-align: left;
+    display: flex;
+    justify-content: center; /* Alinha na horizontal */
+    align-items: center;    /* Alinha na vertical */
+    margin: 0;
+    flex-direction: column;
 }
 
 .footer__nav{
@@ -431,6 +442,11 @@ body {
 
 .footer__list2{
     text-align: left;
+    display: flex;
+    justify-content: center; /* Alinha na horizontal */
+    align-items: center;    /* Alinha na vertical */
+    margin: 0;
+    flex-direction: column;
 }
 
 .footer__link__contato{
@@ -482,6 +498,11 @@ body {
 .header__hamburger{
     display: block;
     color: var(--branco);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
 }
 
 .img__menu__hamburguer{
@@ -499,7 +520,7 @@ body {
 }
 
 .hero__title{
-    font-size: 3em;
+    font-size: 1.4em;
 }
 
 .hero__description{
@@ -654,7 +675,38 @@ body {
    margin: 40px;
 }
 
+.footer__blocks{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    margin: auto;
 }
+
+.footer__block1{
+    display: flex;
+    flex: none;
+}
+
+.footer__list{
+    display: flex;
+    justify-content: center; /* Alinha na horizontal */
+    align-items: center;    /* Alinha na vertical */
+    margin: 0;
+    flex-direction: column;
+}
+
+.footer__list2{
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    margin: 0;
+    flex-direction: column;
+}
+
+.footer__authores_directs{
+    padding-top: 20px;
+}
+
 
 
 @media (max-width:480px){ 
